@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'your_branch', credentialsId: 'your_credentials', url: 'your_git_url'
+                git branch: 'main', credentialsId: 'debasrutidas', url: 'your_git_url'
 
             }
         }
@@ -11,8 +11,9 @@ pipeline {
     stage('Run JMeter Test') {
         steps {
             dir('your_project_folder') {
-                sh '/path/to/jmeter -n -t test.jmx -l result.jtl'
+                bat '/path/to/jmeter -n -t C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin\Test Plan.jmx -l C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin\Test Plan.jmx\result.jtl'
             }
         }
     }
+}
 }
