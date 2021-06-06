@@ -11,7 +11,7 @@ pipeline {
     stage('Run JMeter Test') {
         steps {
             dir('C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin') {
-                bat '/path/to/jmeter -n -t \Test Plan.jmx -l \result.jtl'
+                bat '/path/to/jmeter -n -t \Test Plan.jmx -l \sruti.jtl'
             }
         }
     }
