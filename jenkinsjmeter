@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'debasrutidas', url: 'your_git_url'
+                git branch: 'main', credentialsId: 'debasrutidas', url: 'https://github.com/debasrutidas/jenkinsjmeter.git'
 
             }
         }
