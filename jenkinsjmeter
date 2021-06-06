@@ -10,8 +10,8 @@ pipeline {
     }
     stage('Run JMeter Test') {
         steps {
-            dir('your_project_folder') {
-                bat '/path/to/jmeter -n -t C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin\Test Plan.jmx -l C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin\Test Plan.jmx\result.jtl'
+            dir('C:\Users\SRUTI\Downloads\apache-jmeter-5.4.1\apache-jmeter-5.4.1\bin') {
+                bat '/path/to/jmeter -n -t \Test Plan.jmx -l \result.jtl'
             }
         }
     }
